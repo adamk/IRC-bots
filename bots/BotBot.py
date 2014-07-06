@@ -1,7 +1,7 @@
 import pyrc
 import pyrc.utils.hooks as hooks
 
-class GangstaBot(pyrc.Bot):
+class BotBot(pyrc.Bot):
   @hooks.command()
   def info(self, target, sender):
     "will print the target and sender to the console"
@@ -38,5 +38,6 @@ class GangstaBot(pyrc.Bot):
     self.message("#turntechgodhead", "stop repeating myself")
 '''
 if __name__ == '__main__':
-  bot = GangstaBot('irc.freenode.net', channels = ['#turntechgodhead'])
+  #bot = BotBot('irc.freenode.net', channels = ['#turntechgodhead'])
+  bot = BotBot('irc.geekshed.net', channels = ['#redditnet'])
   bot.connect()
