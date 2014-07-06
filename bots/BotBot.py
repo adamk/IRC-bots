@@ -22,7 +22,7 @@ class BotBot(pyrc.Bot):
       self.message(target, kwargs["msg"])
     else:
       self.message(sender, kwargs["msg"])
-
+'''
   @hooks.privmsg("(lol|lmao|rofl(mao)?)")
   def nolol(self, target, sender, *args):
     """
@@ -31,8 +31,9 @@ class BotBot(pyrc.Bot):
     """
     if target.startswith("#"):
       self.message(target, "%s, %s is a no-%s zone." % (sender, target, args[0].upper()))
-
-'''  @hooks.interval(10000)
+'''
+'''  
+  @hooks.interval(10000)
   def keeprepeating(self):
     "will say something"
     self.message("#turntechgodhead", "stop repeating myself")
