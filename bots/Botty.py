@@ -1,7 +1,7 @@
 import pyrc
 import pyrc.utils.hooks as hooks
 
-class BotBot(pyrc.Bot):
+class Botty(pyrc.Bot):
   @hooks.command()
   def info(self, target, sender):
     "will print the target and sender to the console"
@@ -80,5 +80,5 @@ if __name__ == '__main__':
   #bot = BotBot('irc.freenode.net', channels = ['#turntechgodhead'])
   #bot = BotBot('irc.geekshed.net', channels = ['#redditnet'])
   #bot.connect()
-  bot = BotBot_('irc.freenode.net', channels = ['#turntechgodhead'])
+  bot = Botty('irc.freenode.net', channels = ['#turntechgodhead'])
   bot.connect()
