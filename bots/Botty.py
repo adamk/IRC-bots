@@ -39,7 +39,7 @@ class Botty(pyrc.Bot):
     self.message("#turntechgodhead", "stop repeating myself")
 '''
 
-class BotBot_(pyrc.Bot):
+class Botty(pyrc.Bot):
   @hooks.command()
   def info(self, target, sender):
     "will print the target and sender to the console"
